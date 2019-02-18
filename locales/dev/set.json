@@ -1,0 +1,11 @@
+{
+    "SystemSet": "系统设置",
+    "NetworkSet": "网络设置",
+    "CustomSwitchTip": "开启私有云服务器ip设置",
+    "Test": "测试",
+    "Confirm": "确认",
+    "Cancel": "取消",
+    "TestSuccess": "测试成功",
+    "IpFormatError": "格式不正确",
+    "IpAcessError": "ip地址不通"
+}

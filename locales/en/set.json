@@ -1,0 +1,20 @@
+{
+    "SystemSet": "System setup",
+    "NetworkSet": "Network setup",
+    "CustomSwitchTip": "Open the private cloud server IP settings",
+    "Test": "Test",
+    "Confirm": "Confirm",
+    "Cancel": "Cancel",
+    "TestSuccess": "Test Sucessful",
+    "IpFormatError": "Format Error",
+    "IpAcessError": "Not accessible",
+    "ProblemSolve": "Problem Solve",
+    "DoGragWork": "Do Grag Work",
+    "GragDoneWrong": "Done fail",
+    "GragDoneSuc": "Done success,press comfirm will reboot system",
+    "MacNotSupport": "Mac is not support",
+    "Do Solve": "Solve",
+    "RebootError": "Reboot fail,please do it yourself",
+    "RunScript": "Done fail,run script name OpenDragFunction.cmd on desktop as administrator",
+    "RunEmessage": "Done fail,run emessage as administrator and do it again"
+}

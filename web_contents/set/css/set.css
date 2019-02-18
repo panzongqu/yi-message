@@ -1,0 +1,229 @@
+body {
+    font-family: '微软雅黑';
+    font-size: 14px;
+    overflow: hidden;
+    cursor: initial;
+    /*padding: 5px 5px;*/
+}
+
+hr{
+    height: 1px;
+    border: none;
+    border-top: 1px dashed #c9cacb;
+}
+.canAero-body {
+    padding: 5px 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.can-drag {
+    -webkit-app-region: drag;
+}
+
+.no-drag {
+    -webkit-app-region: no-drag;
+}
+
+.clear{
+    clear:both;
+}
+
+.container {
+    -webkit-user-select: none;
+    background-color: #fff;
+    width: 440px;
+    height: 290px;
+    color: #4D4D4D;
+    /*border-radius: 5px;*/
+    /*box-shadow:rgba(0,0,0,0.25) 0 0 5px 1px ;*/
+}
+.canAero-container {
+    border-radius: 5px;
+    box-shadow:rgba(0,0,0,0.25) 0 0 5px 1px ;
+}
+
+/* 头部 */
+.header {
+    background-color: #299fea;
+    height: 10%;
+    padding-top: 5px;
+    -webkit-user-select: none;
+}
+
+.logo {
+    width: 120px;
+    height: 28px;
+    float: left;
+    padding-left: 28px;
+    line-height: 20px;
+    margin-left: 12px;
+    color: #fff;
+    background: url("../../images/update-log.png") 0 0 no-repeat;
+}
+
+.operating {
+    height: 28px;
+    float: right;
+    -webkit-user-select: none;
+}
+
+.operating > div{
+    float: right;
+}
+
+.operating > div > div {
+    padding-left: 2px;
+    width: 30px;
+    text-align: center;
+    list-style: none;
+    float: left;
+    background: url("../../images/xian.png") 0 0 no-repeat;
+    cursor:pointer;
+}
+
+.operating > div > div > .minButton:hover {
+    background: url("../../images/min1.png") 0 0 no-repeat;
+}
+.operating > div > div > .minButton:active {
+    background: url("../../images/min2.png") 0 0 no-repeat;
+}
+.operating > div > div > .closeButton:hover {
+    background: url("../../images/close1.png") 0 0 no-repeat;
+}
+.operating > div > div > .closeButton:active {
+    background: url("../../images/close2.png") 0 0 no-repeat;
+}
+
+.gradient{
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#00d0ff), to(rgba(0, 0, 255, 0.5)));
+}
+
+.center {
+    margin: 10px 10px;
+    height: 65%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    /*background: #eee;*/
+}
+
+.center .contentInfo {
+    padding-left: 20px;
+}
+
+.center .contentItem {
+    margin: 12px;
+}
+
+.center .contentTitle {
+    padding: 10px 6px;
+    cursor: pointer;
+}
+
+.center .testSuc {
+    color: springgreen;
+}
+
+.center .testFail {
+    color: orangered;
+}
+
+.center .fa-chevron {
+    float: right;
+    right: 20px;
+    font-size: 0;
+    color: #595959;
+    position: relative;
+}
+
+.center .fa-chevron:after {
+    clear: both;
+}
+
+.center .arrow-right:after,
+.center .arrow-right:before,
+.center .arrow-down:after,
+.center .arrow-down:before {
+    border: 10px solid transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -20px;
+    content: ' ';
+}
+
+.center .arrow-right:after,
+.center .arrow-right:before {
+    border-left: 10px solid #fff;
+    top: 0;
+}
+
+.center .arrow-right:before {
+    right: -21px;
+    border-left-color: #595959;
+}
+
+.center .arrow-down:after,
+.center .arrow-down:before {
+    border-top: 10px solid #fff;
+}
+
+.center .arrow-down:before {
+    top: 1px;
+    border-top-color: #595959;
+}
+
+.center input {
+    border: 1px solid #dadada;
+}
+
+.center input[type=text] {
+    width: 60%;
+    height: 24px;
+}
+
+.center input[type=button] {
+    height: 24px;
+    width: 13%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.center input[type=button]:hover {
+    color: #4193d8;
+}
+
+.center input[type=button]:disabled {
+    background: #EBEBE4;
+    cursor: default;
+    color: inherit;
+}
+
+.footer {
+    padding-right: 28px;
+    text-align: center;
+    height: 16%;
+    background: #FAFAFA;
+    border-top: 1px solid #dadada;
+}
+
+.footer > .cancel,
+.footer > .confirm  {
+    cursor: pointer;
+    border: 0;
+    width: 70px;
+    height: 100%;
+    background-color: inherit;
+}
+.footer > .cancel:hover,
+.footer > .confirm:hover {
+    color: #4193d8;
+}
+
+.footer > .b-spliter {
+    border-right: 1px solid #dadada;
+}

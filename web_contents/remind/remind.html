@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/remind.css" />
+</head>
+<body>
+<div class="remind">
+    <!--窗口顶部-->
+    <div class="header clear can-drag">
+        <div id="remindTitle" class="title"></div>
+        <div class="remind-close no-drag" title="关闭"></div>
+    </div>
+    <!--窗口中间空白显示部分-->
+    <div class="center">
+        <div class="remind-content"></div>
+        <div class="remind-details"></div>
+    </div>
+    <!--窗口底部-->
+     <div class="bottom">
+        <div class="bottom-left">
+            <ul class="bottom-ul">
+            </ul>
+        </div>
+        <div class="bottom-right" onclick="opensetWindow()"><div class="bottom-right-left"></div></div>
+    </div>
+   <!-- 轮播图标-->
+        <div class="prev"></div>
+        <div class="next"></div>
+</div>
+
+<script src="../js/jquery-1.8.3.min_wev8.js" type="text/javascript"></script>
+<script src="js/remind.js"></script>
+</body>
+</html>

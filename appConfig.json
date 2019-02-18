@@ -1,0 +1,41 @@
+{
+    "index": "/web_contents/login/login.html",
+    "updateUrl": "/web_contents/update/update.html",
+    "checkPwdUrl": "/web_contents/remind/loginRemind.html",
+
+    "windowSize": {
+        "loginWin": {
+            "width": 307,
+            "height": 680
+        },
+        "updateWin": {
+            "width": 450,
+            "height": 300
+        },
+        "mainChatWin": {
+            "width": 1053,
+            "height": 627,
+            "minWidth": 1053,
+            "minHeight": 627,
+            "reWidth": 290
+        },
+        "appTipWin": {
+            "width": 320,
+            "height": 195
+        },
+        "checkPwdWin": {
+            "width": 330,
+            "height": 200
+        }
+    },
+
+    "trayConfig": {
+        "trayToolTipMessage": "e-message",
+        "commonIco": "/web_contents/images/logo.ico",
+        "busyIco": "/web_contents/images/kong.png",
+        "offlineIco": "/web_contents/images/offline-logo.png",
+        "macCommonIco": "/web_contents/images/mac-logo.png",
+        "macBusyIco": "/web_contents/images/mac-kong.png",
+        "macOfflineIco": "/web_contents/images/mac-offline-logo.png"
+    }
+}

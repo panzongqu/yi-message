@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>e-message</title>
+        <link rel="stylesheet" type="text/css" href="../js/plugins/poshytip/tip-yellowsimple/tip-yellowsimple.css" />
+        <link rel="stylesheet" type="text/css" href="../js/plugins/perfect-scrollbar/perfect-scrollbar.css" />
+        <link rel="stylesheet" type="text/css" href="css/login.css" />
+    </head>
+
+    <body>
+        <!-- 总窗口 -->
+        <div class="container can-drag">
+            <!-- 顶部logo 和 工具栏 -->
+            <div class="header">
+                <div class="logo">e-message</div>
+                <div class="operating no-drag">
+                    <div class="clear">
+                        <div><img class="setButton" src="../images/set.png" /></div>
+                        <!-- <div><img class="skinButton" src="../images/skin.png" /></div> -->
+                       <div><img class="minButton" src="../images/min.png" /></div>
+                       <div><img class="closeButton" src="../images/close.png" /></div>
+                   </div>
+
+               </div>
+           </div>
+
+           <!-- 中部 头像、表单和按钮 -->
+            <div class="content no-drag">
+                <!-- 头像 -->
+                <div class="headPortrait">
+                    <img id="headImg" style="width: 96px; height: 96px;" draggable="false" src="../images/loginhead.jpg" />
+                </div>
+
+                <!-- 错误提示 -->
+                <div class="errorTip">
+                    <img style="width: 14px; height: 14px;" src="../images/errorIcon.png" />
+                    <span class="errorMsg"></span>
+                </div>
+
+                <!-- 表单 -->
+                <div class="loginDiv">
+                    <form id="loginForm">
+                        <dl>
+                            <dd>
+                                <div class="form-control">
+                                    <label data-i18n="OaAddress">：</label>
+                                    <input type="text" name="oaAddress" />
+                                    <div class="oaAdressImg"></div>
+
+                                    <!-- OA地址： -->
+                                    <div class="oaAdressSelect"></div>
+                                    <div id="openQrcodeDiv" class="openQrcodeDiv no-drag" data-i18n="[title]openQrcodeDiv"></div>
+                                </div>
+                            </dd>
+                            <dd>
+                                <div class="form-control">
+                                    <label data-i18n="LoginUserName"></label>
+                                    <input type="text" name="username" />
+                                </div>
+                            </dd>
+                            <dd>
+                                <div class="form-control">
+                                    <label data-i18n="password"></label>
+                                    <input type="password" name="userPassword" />
+                                </div>
+                            </dd>
+                            <dd id="otherKey">
+                                <div class="form-control" id="otherKey_div">
+                                </div>
+                                 <div class="form-control" id="dynapass_div">
+                                </div>
+                            </dd>
+                            <dd class="last">
+                                <div class="form-control">
+                                    <label data-i18n="langSelect"></label>
+                                    <div id="languageInput" class="languageInput-common" onclick="choiceLanguage()">简体中文</div>
+                                    <input type="hidden" name="islanguid" value="7" />
+
+                                    <!-- 语言选择 -->
+                                    <div id="selectLanguage" class="selectLanguage">
+                                        <dl>
+                                            <dd value="8" onclick="clickDD(this)">English</dd>
+                                            <dd value="9" onclick="clickDD(this)">繁體中文</dd>
+                                        </dl>
+                                    </div>
+
+                                </div>
+                            </dd>
+                        </dl>
+                    </form>
+                </div>
+
+                <!-- 正在登陆 -->
+                <div class="loging"></div>
+
+                <!-- 记住密码 自动登陆 -->
+                <div class="otherTool">
+                    <input id="rememberPassword" type="checkbox" /><label for="rememberPassword" data-i18n="RememberPass"></label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="automaticlanding" type="checkbox" /><label for="automaticlanding" data-i18n="AutoLogin"></label>
+                </div>
+
+                <!-- 提交按钮 -->
+                <div class="submitButton" data-i18n="Login"></div>
+
+                <!-- 取消按钮 -->
+                <div class="cancelButton" data-i18n="Cancel"></div>
+            </div>
+
+            <div id="qrcodeLogin" class="qrcodeDiv">
+                <div class="h-10">&nbsp;</div>
+                <div class="texttip" data-i18n="OaAddress0"></div>
+                <div class="texttip" id="qrcodeOaAddress"></div>
+                <div class="h-10">&nbsp;</div>
+                <div class="qrcodeImgDiv" >
+                    <div id="qrcodeImg"></div>
+                </div>
+                <div class="h-10">&nbsp;</div>
+                <div class="texttip" data-i18n="QrcodeTextTip"></div>
+                <div class="h-10">&nbsp;</div>
+                <div class="backBtnDiv">
+                    <input type="button" id="backbtn" class="backBtn" data-i18n="[value]Goback">
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/jquery-1.8.3.min_wev8.js" type="text/javascript"></script>
+        <script src="../js/plugins/poshytip/jquery.poshytip.min.js" type="text/javascript"></script>
+        <script src="../js/plugins/perfect-scrollbar/perfect-scrollbar.jquery.js" type="text/javascript"></script>
+        <script src="../js/plugins/qrcode/jquery.qrcode_wev8.js" type="text/javascript"></script>
+        <script src="../js/plugins/qrcode/qrcode_wev8.js" type="text/javascript"></script>
+        <script src="../js/plugins/i18next/i18next.js" type="text/javascript"></script>
+
+        <script src="../js/WebSql_wev8.js" type="text/javascript"></script>
+        <script src="../js/DatabaseUtils.js" type="text/javascript"></script>
+
+        <script src="js/login.js" type="text/javascript"></script>
+    </body>
+</html>

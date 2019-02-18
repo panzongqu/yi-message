@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>e-message系统设置</title>
+    <link rel="stylesheet" type="text/css" href="../js/plugins/zDialog/zDialog_e8_wev8.css" />
+    <link rel="stylesheet" type="text/css" href="../js/plugins/zDialog/e8_zDialog_btn_wev8.css" />
+    <link rel="stylesheet" type="text/css" href="../js/plugins/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/set.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- 顶部logo 和 工具栏 -->
+        <div class="header can-drag">
+            <div class="logo" data-i18n="SystemSet"> </div>
+            <div class="operating no-drag">
+                <div class="clear">
+                    <!-- <div><img class="minButton" src="../images/min.png" /></div> -->
+                    <div><img class="closeButton" src="../images/close.png" /></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <section>
+                <h4 class="contentTitle" data-i18n="NetworkSet"><i class="fa-chevron arrow-down"></i></h4>
+                <hr/>
+                <div class="contentInfo">
+                    <div class="contentItem">
+                        <input type="checkbox" name="ipSetSw" id="ipSetSw" />
+                        <label for="ipSetSw" data-i18n="CustomSwitchTip"></label>
+                    </div>
+                    <div class="contentItem">
+                        <input type="text" name="ipText" id="ipText" value="" disabled="disabled" />
+                        <input type="button" name="testBtn" id="testBtn" data-i18n="[value]Test" disabled="disabled" />
+                        <div id="testRst" class="testSuc"></div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+
+        <div class="footer">
+            <input type="button" class="confirm" data-i18n="[value]Confirm" />
+            <i class="b-spliter"></i>
+            <input type="button" class="cancel" data-i18n="[value]Cancel" />
+        </div>
+    </div>
+
+    <script src="../js/jquery-1.8.3.min_wev8.js" type="text/javascript"></script>
+    <script src="../js/plugins/zDialog/zDialog_wev8.js" type="text/javascript"></script>
+    <script src="../js/plugins/zDialog/zDrag_wev8.js" type="text/javascript"></script>
+    <script src="../js/plugins/perfect-scrollbar/perfect-scrollbar.jquery.js" type="text/javascript"></script>
+    <script src="../js/plugins/i18next/i18next.js" type="text/javascript"></script>
+
+    <script src="js/set.js" type="text/javascript"></script>
+</body>
+
+</html>

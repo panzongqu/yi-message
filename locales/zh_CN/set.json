@@ -1,0 +1,20 @@
+{
+    "SystemSet": "系统设置",
+    "NetworkSet": "网络设置",
+    "CustomSwitchTip": "开启私有云服务器ip设置",
+    "Test": "测试",
+    "Confirm": "确认",
+    "Cancel": "取消",
+    "TestSuccess": "测试成功",
+    "IpFormatError": "格式不正确",
+    "IpAcessError": "ip地址不通",
+    "ProblemSolve": "功能修复",
+    "DoGragWork": "拖拽文件功能修复",
+    "GragDoneWrong": "执行失败",
+    "GragDoneSuc": "执行成功，重启后生效，点击确认将重启系统",
+    "MacNotSupport": "Mac系统暂不支持",
+    "DoSolve": "修复",
+    "RebootError": "重启失败，请手动重启系统",
+    "RunScript": "执行失败，请尝试以管理员权限执行桌面脚本《OpenDragFunction.cmd》",
+    "RunEmessage": "执行失败，请尝试以管理员权限运行emessage并重新执行该操作"
+}

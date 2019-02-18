@@ -1,0 +1,491 @@
+body {
+    font-family: '微软雅黑';
+    font-size: 14px;
+    overflow: hidden;
+    cursor: initial;
+}
+
+.canAero-body {
+    padding: 5px 5px;
+}
+
+.canAero-content {
+    margin-top: 98px !important;
+    margin-left: 27px !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#headImg {
+    max-width: 96px;
+    max-height: 96px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.can-drag {
+    -webkit-app-region: drag;
+}
+
+.no-drag {
+    -webkit-app-region: no-drag;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    -webkit-user-select: none;
+    /* width: 300px; */
+    height: 680px;
+    /*border-radius: 5px;*/
+    /* background-image: url("../../images/skin0.png"); */
+    background-color: #46C4F4;
+    /*box-shadow:rgba(0,0,0,0.25) 0 0 5px 1px ;*/
+}
+
+.canAero-container {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px 1px;
+}
+
+
+/* 头部 */
+
+.header {
+    padding-top: 5px;
+    -webkit-user-select: none;
+}
+
+.logo {
+    width: 99px;
+    height: 22px;
+    float: left;
+    padding-left: 25px;
+    line-height: 22px;
+    margin-left: 5px;
+    color: #fff;
+    background: url("../../images/logo22.png") 0 0 no-repeat;
+}
+
+.operating {
+    height: 28px;
+    float: right;
+    -webkit-user-select: none;
+}
+
+.operating>div {
+    float: right;
+}
+
+.operating>div>div {
+    padding-left: 2px;
+    width: 30px;
+    text-align: center;
+    list-style: none;
+    float: left;
+    background: url("../../images/xian.png") 0 0 no-repeat;
+    cursor: pointer;
+}
+
+.operating>div>div>.setButton:hover {
+    background: url("../../images/set1.png") 0 0 no-repeat;
+}
+
+.operating>div>div>.setButton:active {
+    background: url("../../images/set2.png") 0 0 no-repeat;
+}
+
+.operating>div>div>.skinButton:hover {
+    background: url("../../images/skin1.png") 0 0 no-repeat;
+}
+
+.operating>div>div>.skinButton:active {
+    background: url("../../images/skin2.png") 0 0 no-repeat;
+}
+
+.operating>div>div>.minButton:hover {
+    background: url("../../images/min1.png") 0 0 no-repeat;
+}
+
+.operating>div>div>.minButton:active {
+    background: url("../../images/min2.png") 0 0 no-repeat;
+}
+
+.operating>div>div>.closeButton:hover {
+    background: url("../../images/close1.png") 0 0 no-repeat;
+}
+
+.operating>div>div>.closeButton:active {
+    background: url("../../images/close2.png") 0 0 no-repeat;
+}
+
+
+/* 中部 */
+
+.content {
+    width: 231px;
+    /*height: 394px;*/
+    /*padding-top: 98px;*/
+    /*padding-left: 27px;*/
+    padding-bottom: 150px;
+    margin-top: 103px;
+    margin-left: 32px;
+    -webkit-user-select: none;
+}
+
+
+/* 头像 */
+
+.content>.headPortrait {
+    padding-left: 68px;
+}
+
+
+/* 错误提示 */
+
+.content>.errorTip {
+    visibility: hidden;
+    width: 230px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.content>.errorTip>.errorMsg {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* 表单 */
+
+.content>.loginDiv {
+    width: 231px;
+    /*height: 160px;*/
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #46C4F4;
+}
+
+.content>.loginDiv dl>dd {
+    height: 40px;
+    border-bottom: #98e0f9 solid 1px;
+}
+
+.content>.loginDiv dl>dd.last {
+    border-bottom: none;
+}
+
+
+/* 其他口令 */
+
+#otherKey {
+    display: none;
+}
+
+.content>.loginDiv .form-control {}
+
+.content>.loginDiv .form-control>label {
+    display: inline-block;
+    width: 65px;
+    line-height: 40px;
+    margin-left: 10px;
+    font-size: 12px;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.content>.loginDiv .form-control>input {
+    width: 60%;
+    height: 20px;
+    background: transparent;
+    color: #ffffff!important;
+    border: 0;
+    outline: none;
+    text-indent: 5px;
+}
+
+.content>.loginDiv .form-control>input.oaAdressInput {
+    width: 52%;
+}
+
+.content>.loginDiv .form-control>.oaAdressImg {
+    display: none;
+    float: right;
+    width: 24px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    background: url("../../images/sanjiao.png") no-repeat left center;
+}
+
+.content>.loginDiv .form-control>.oaAdressImg-click {
+    background: url("../../images/sanjiao1.png") no-repeat left center;
+}
+
+.content>.loginDiv .form-control>.oaAdressSelect {
+    display: none;
+    width: 231px;
+    max-height: 166px;
+    position: relative;
+    margin-top: -5px;
+}
+
+.content>.loginDiv .form-control>.oaAdressSelect>div {
+    cursor: pointer;
+    background-color: #6fd5f5;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.content>.loginDiv .form-control>.oaAdressSelect>div>p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.content>.loginDiv .form-control>.oaAdressSelect>div:hover {
+    background-color: #8adaf3;
+}
+
+.languageInput-common {
+    float: right;
+    cursor: pointer;
+    width: 60%;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 3px;
+    margin-right: 13px;
+    background: url("../../images/sanjiao.png") no-repeat right;
+}
+
+.languageInput-click {
+    float: right;
+    cursor: pointer;
+    width: 60%;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 3px;
+    margin-right: 13px;
+    background: url("../../images/sanjiao1.png") no-repeat right;
+}
+
+
+/* 语言选择div */
+
+.selectLanguage {
+    display: none;
+    height: 80px;
+    position: relative;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.selectLanguage>dl>dd {
+    background-color: #6fd5f5;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 82px;
+}
+
+.selectLanguage>dl>dd:hover {
+    background-color: #8adaf3;
+}
+
+
+/* 记住密码  自动登陆 */
+
+.content>.otherTool {
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.otherTool>input,
+.otherTool>label {
+    cursor: pointer;
+}
+
+.content>.otherTool>input[type=checkbox] {
+    -webkit-appearance: none;
+    content: url("../../images/gou1.png");
+}
+
+.content>.otherTool>input[type=checkbox]:checked {
+    -webkit-appearance: none;
+    content: url("../../images/gou.png");
+}
+
+
+/* 提交按钮 */
+
+.content>.submitButton {
+    height: 36px;
+    background: #fff;
+    color: #88C7ED;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.content>.submitButton:hover {
+    background: #C4EBF7;
+}
+
+.content>.submitButton:active {
+    background: #46C4F4;
+}
+
+
+/* 取消登陆 */
+
+.content>.cancelButton {
+    display: none;
+    height: 36px;
+    background: #fff;
+    color: #88C7ED;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.content>.cancelButton:hover {
+    background: #EFA2A9;
+    color: #FFFFFF;
+}
+
+.content>.cancelButton:active {
+    background: #D98C94;
+    color: #FFFFFF;
+}
+
+.content>.loging {
+    display: none;
+    width: 231px;
+    height: 148px;
+    margin-top: 22px;
+    background: url("../../images/loging.gif") no-repeat center;
+}
+
+
+/*
+    下面是对poshytip的样式修改
+*/
+
+.tip-yellowsimple .tip-inner {
+    font: 12px/16px arial, helvetica, '微软雅黑';
+}
+
+.openQrcodeDiv {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 235px;
+    left: 245px;
+    cursor: pointer;
+    background: url("../../images/qrcode_wev8.png");
+}
+
+.openQrcodeDiv:hover {
+    background: url("../../images/qrcodeOver_wev8.png");
+}
+
+.qrcodeDiv {
+    display: none;
+    background-color: #46C4F4;
+    z-index: 2;
+    position: absolute;
+    top: 258px;
+    left: 31px;
+    width: 233px;
+    height: 300px;
+}
+
+.h-10 {
+    height: 10px;
+}
+
+#qrcodeImg {
+    background-color: #E5E5E5;
+    padding: 5px;
+    width: 125px;
+}
+
+.qrcodeDiv .texttip {
+    color: #fff;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+}
+
+.qrcodeDiv .qrcodeImgDiv {
+    padding-left: 55px;
+}
+
+.qrcodeDiv .backBtnDiv {
+    text-align: center;
+}
+
+.qrcodeDiv .backBtn {
+    cursor: pointer;
+    height: 36px;
+    width: 154px;
+    border: 0;
+    background: #B2BECD;
+    color: #fff;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.qrcodeDiv .backBtn:hover {
+    background: #2D8BB7;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.imageClose {
+    background: url("../../images/close3.png") left center no-repeat;
+    /*float: right;*/
+    width: 24px;
+    height: 40px;
+    display: none;
+    line-height: 40px;
+    /*border: 1px solid red;*/
+}
+
+.textDiv {
+    /*float: right;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 180px;
+    text-align: center;
+}
+
+.first {
+    width: 191px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+}
